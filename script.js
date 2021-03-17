@@ -47,3 +47,6 @@ const game = {
   // First player will be goalie. Rest are players in field.
   const [gkUSA, ...fieldPlayersUSA] = playersUSA;
   const [gkBrazil, ...fieldPlayersBrazil] = playersBrazil;
+
+  // An array that will contain ALL players (both teams)
+  const allPlayers = [...playersUSA, ...playersBrazil];
