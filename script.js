@@ -1,3 +1,5 @@
+'use strict';
+
 const game = {
     team1: 'USA',
     team2: 'Brazil',
@@ -15,6 +17,18 @@ const game = {
         'Dempsey',
     ],
     [
-        
-    ]
-}
+        'Ronaldo', 
+        'Branco', 
+        'Leonardo',
+        'Mazinho',
+        'Jorginho',
+        'Aldair',
+        'Cafu',
+        'Viola',
+        'Mauro Silva',
+        'Muller',
+        'Zetti',
+    ],
+},
+score: '3:1',
+scored: []
