@@ -63,5 +63,8 @@ const game = {
       console.log(players);
       console.log(`${players.length} goals were scored in the game.`);
   }
+  printGoals(...game.scored);
 
-  
+  // Team with lower odds more likely to win. Print to console which team more likely to win based on game.odds
+  oddsUSA < oddsBrazil && console.log(`${game.team1} is more likely to win the soccer game today.`);
+  oddsBrazil < oddsUSA && console.log(`${game.team2} is more likely to win the soccer game today.`);
