@@ -134,3 +134,9 @@ const gameEvents = new Map([
 // Array called 'uniqueEvents', but without duplicates
 const uniqueEvents = [...new Set(gameEvents.values())];
 console.log(unqiueEvents); // (4) ["GOAL", "Substitution", "Yellow card", "Red card"]
+
+// Yellow card from minute 64 was ruled incorrectly. Remove this yellow card event from the log of gameEvents.
+gameEvents.delete(64);
+console.log(gameEvents); // Now shows 10 events instead of 11
+
+// Print a string displaying how many events happened per minute in the game
