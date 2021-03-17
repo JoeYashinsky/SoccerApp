@@ -40,3 +40,6 @@ const game = {
       team2: 1.33,
     },
   };
+
+  // Player array for each team (USA, Brazil)
+  const [playersUSA, playersBrazil] = game.players;
