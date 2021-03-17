@@ -106,3 +106,11 @@ for(const [team, odd] of Object.entries(game.odds)) {
     //Odd of draw 3.25
     //Odd of victory oddsBrazil 1.33
 }
+
+//Create an object that contains names of all players who scored (as properties), and the number of goals scored as the associated value.
+const goalScorers = {};
+for (const player of game.scored) {
+    goalScorers[player] ? goalScorers[player]++ : (goalScorers[player] = 1);
+}
+
+
