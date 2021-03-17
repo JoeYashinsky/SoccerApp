@@ -74,7 +74,7 @@ const game = {
   oddsUSA < oddsBrazil && console.log(`${game.team1} is more likely to win the soccer game today.`);
   oddsBrazil < oddsUSA && console.log(`${game.team2} is more likely to win the soccer game today.`);
 
-  // Loop over game.scored array and print each player name to the console, along with the goal number
+  // Loop over game.scored array and print each player name to the console, along with the goal number. Using 'entries' will give index of each goal.
 
 for (const [i, player] of game.scored.entries()) {
     console.log(`Goal ${i + 1}: ${player}`);
@@ -94,3 +94,15 @@ for (const odd of odds) {
     console.log(average);  //  11.08 / 3 = 3.69
 }
 
+// Print all 3 odds to console with key/value of each odd
+for(const [team, odd] of Object.entries(game.odds)) {
+    const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
+    console.log(team, odd);
+    // oddsUSA 6.5
+    // x 3.25
+    // oddsBrazil 1.33
+    console.log(`Odd of ${teamStr} ${odd}`);
+    //Odd of victory oddsUSA 6.5
+    //Odd of draw 3.25
+    //Odd of victory oddsBrazil 1.33
+}
