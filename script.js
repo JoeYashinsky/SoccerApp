@@ -46,10 +46,13 @@ const game = {
 
   // First player will be goalie. Rest are players in field.
   const [gkUSA, ...fieldPlayersUSA] = playersUSA;
+  console.log(gkUSA, fieldPlayersUSA);
+  // Prints:  Howard, then (10) ["Lalas", "Wynalda", etc.]
   const [gkBrazil, ...fieldPlayersBrazil] = playersBrazil;
 
   // An array that will contain ALL players (both teams)
   const allPlayers = [...playersUSA, ...playersBrazil];
+  console.log(allPlayers); // Prints: one single array with all 22 elements
 
   // USA inserted 3 subs. New array will consist of all original USA players plus the 3 substitutes.
 
@@ -63,7 +66,9 @@ const game = {
       console.log(players);
       console.log(`${players.length} goals were scored in the game.`);
   }
-  printGoals(...game.scored);
+
+  printGoals('Wynalda', 'Ronaldo'); // 2 goals were scored in the game.
+  printGoals(...game.scored); // 4 goals were scored in the game.
 
   // Team with lower odds more likely to win. Print to console which team more likely to win based on game.odds
   oddsUSA < oddsBrazil && console.log(`${game.team1} is more likely to win the soccer game today.`);
