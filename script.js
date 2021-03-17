@@ -117,7 +117,6 @@ for (const player of game.scored) {
   goalScorers[player] ? goalScorers[player]++ : (goalScorers[player] = 1);
 }
 
-// Array called 'gameEvents', but without duplicates
 const gameEvents = new Map([
   [16, 'Yellow card'],
   [17, 'GOAL'],
@@ -131,3 +130,7 @@ const gameEvents = new Map([
   [80, 'GOAL'],
   [92, 'Yellow card'],
 ]);
+
+// Array called 'uniqueEvents', but without duplicates
+const uniqueEvents = [...new Set(gameEvents.values())];
+console.log(unqiueEvents); // (4) ["GOAL", "Substitution", "Yellow card", "Red card"]
