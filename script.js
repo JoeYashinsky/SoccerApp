@@ -4,6 +4,7 @@ const game = {
     team1: 'USA',
     team2: 'Brazil',
     players: [
+      [
         'Lalas', 
         'Wynalda',
         'Ramos',
@@ -15,8 +16,8 @@ const game = {
         'Donovan',
         'Altidore',
         'Dempsey',
-    ],
-    [
+      ],
+      [
         'Ronaldo', 
         'Branco', 
         'Leonardo',
@@ -26,9 +27,16 @@ const game = {
         'Cafu',
         'Viola',
         'Mauro Silva',
-        'Muller',
+        'Bebeto',
         'Zetti',
+      ],
     ],
-},
-score: '3:1',
-scored: []
+    score: '1:3',
+    scored: ['Ramos', 'Ronaldo', 'Cafu', 'Bebeto'],
+    date: 'July 4th, 1994', 
+    odds: {
+      team1: 6.5, 
+      x: 3.25,
+      team2: 1.33,
+    },
+  };
