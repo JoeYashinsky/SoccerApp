@@ -140,3 +140,5 @@ gameEvents.delete(64);
 console.log(gameEvents); // Now shows 10 events instead of 11
 
 // Print a string displaying how many events happened per minute in the game
+const gameString = `An event happened, on average, every ${90 / gameEvents.size} minutes out there on the pitch.`;
+console.log(gameString);
