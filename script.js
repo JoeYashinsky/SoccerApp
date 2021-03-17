@@ -35,9 +35,9 @@ const game = {
     scored: ['Ramos', 'Ronaldo', 'Cafu', 'Bebeto'],
     date: 'July 4th, 1994', 
     odds: {
-      team1: 6.5, 
+      oddsUSA: 6.5, 
       x: 3.25,
-      team2: 1.33,
+      oddsBrazil: 1.33,
     },
   };
 
@@ -50,3 +50,18 @@ const game = {
 
   // An array that will contain ALL players (both teams)
   const allPlayers = [...playersUSA, ...playersBrazil];
+
+  // USA inserted 3 subs. New array will consist of all original USA players plus the 3 substitutes.
+
+  const playersUSAFinal = [...playersUSA, 'Jones', 'Stewart', 'Dooley'];
+
+  // Based on game.odds object, create a variable to represent each separate odd.
+  const {odds: {oddsUSA, x: draw, oddsBrazil}} = game;
+
+  // Function 'printGoals' 
+  const printGoals = function (...players) {
+      console.log(players);
+      console.log(`${players.length} goals were scored in the game.`);
+  }
+
+  
