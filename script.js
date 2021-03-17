@@ -5,11 +5,11 @@ const game = {
     team2: 'Brazil',
     players: [
       [
+        'Howard',
         'Lalas', 
         'Wynalda',
         'Ramos',
         'Preki',
-        'Howard',
         'Lewandowski',
         'Adu',
         'Beasley',
@@ -18,6 +18,7 @@ const game = {
         'Dempsey',
       ],
       [
+        'Zetti',
         'Ronaldo', 
         'Branco', 
         'Leonardo',
@@ -28,7 +29,6 @@ const game = {
         'Viola',
         'Mauro Silva',
         'Bebeto',
-        'Zetti',
       ],
     ],
     score: '1:3',
@@ -43,3 +43,7 @@ const game = {
 
   // Player array for each team (USA, Brazil)
   const [playersUSA, playersBrazil] = game.players;
+
+  // First player will be goalie. Rest are players in field.
+  const [gkUSA, ...fieldPlayersUSA] = playersUSA;
+  const [gkBrazil, ...fieldPlayersBrazil] = playersBrazil;
