@@ -68,3 +68,24 @@ const game = {
   // Team with lower odds more likely to win. Print to console which team more likely to win based on game.odds
   oddsUSA < oddsBrazil && console.log(`${game.team1} is more likely to win the soccer game today.`);
   oddsBrazil < oddsUSA && console.log(`${game.team2} is more likely to win the soccer game today.`);
+
+  // Loop over game.scored array and print each player name to the console, along with the goal number
+
+for (const [i, player] of game.scored.entries()) {
+    console.log(`Goal ${i + 1}: ${player}`);
+}
+
+// Goal 1: Ramos
+// Goal 2: Ronaldo
+// Goal 3: Cafu
+// Goal 4: Bebeto
+
+// Calculae the average odd of this game
+const odds = Object.values(game.odds);
+let average = 0;
+for (const odd of odds) {
+    average += odd;
+    average /= odds.length;
+    console.log(average);  //  11.08 / 3 = 3.69
+}
+
