@@ -142,3 +142,9 @@ console.log(gameEvents); // Now shows 10 events instead of 11
 // Print a string displaying how many events happened per minute in the game
 const gameString = `An event happened, on average, every ${90 / gameEvents.size} minutes out there on the pitch.`;
 console.log(gameString);
+
+// loop over events and log to console. Designate whether the event took place in 1st half or 2nd half.
+for (const [min, gameEvent] of gameEvents) {
+    const half = min <= 45 ? 'FIRST' : 'SECOND';
+    console.log(`[${half} HALF}] ${min}: ${gameEvent}`);
+}
