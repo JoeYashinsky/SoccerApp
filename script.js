@@ -148,3 +148,7 @@ for (const [min, gameEvent] of gameEvents) {
     const half = min <= 45 ? 'FIRST' : 'SECOND';
     console.log(`[${half} HALF}] ${min}: ${gameEvent}`);
 }
+
+// Find the last value in gameEvents map. 
+const time = [...gameEvents.keys()].pop();  // "pop" will return 92
+console.log(time);  // 92
