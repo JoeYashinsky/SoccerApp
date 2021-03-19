@@ -66,7 +66,7 @@ const {
 // Function 'printGoals'
 const printGoals = function (...players) {
   console.log(players);
-  console.log(`${players.length} goals were scored in the game.`);
+  console.log(`${players.length} were the total number of goals scored in the game.`);
 };
 
 printGoals('Wynalda', 'Ronaldo'); // 2 goals were scored in the game.
@@ -152,3 +152,4 @@ for (const [min, gameEvent] of gameEvents) {
 // Find the last value in gameEvents map. 
 const time = [...gameEvents.keys()].pop();  // "pop" will return 92
 console.log(time);  // 92
+
