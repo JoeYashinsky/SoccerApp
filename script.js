@@ -138,6 +138,8 @@ console.log(unqiueEvents); // (4) ["GOAL", "Substitution", "Yellow card", "Red c
 // Yellow card from minute 64 was ruled incorrectly. Remove this yellow card event from the log of gameEvents.
 gameEvents.delete(64);
 console.log(gameEvents); // Now shows 10 events instead of 11
+gameEvents.delete(61);
+console.log(gameEvents);  // Now displays just 9 events instead of 10
 
 // Print a string displaying how many events happened per minute in the game
 const gameString = `An event happened, on average, every ${90 / gameEvents.size} minutes out there on the pitch.`;
