@@ -74,9 +74,9 @@ printGoals(...game.scored); // 4 goals were scored in the game.
 
 // Team with lower odds more likely to win. Print to console which team more likely to win based on game.odds
 oddsUSA < oddsBrazil &&
-  console.log(`${game.team1} is more likely to win the soccer game today.`);
+  console.log(`${game.team1} was deemed more likely to win this game.`);
 oddsBrazil < oddsUSA &&
-  console.log(`${game.team2} is more likely to win the soccer game today.`);
+  console.log(`${game.team2} was deemed more likely to win this game.`);
 
 // Loop over game.scored array and print each player name to the console, along with the goal number. Using 'entries' will give index of each goal.
 
