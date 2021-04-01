@@ -111,7 +111,8 @@ for (const [team, odd] of Object.entries(game.odds)) {
   //Odd of victory oddsBrazil 1.33
 }
 
-//Create an object that contains names of all players who scored (as properties), and the number of goals scored as the associated value.
+//Create an object that contains names of all players who scored (as properties), 
+// and the number of goals scored as the associated value.
 const goalScorers = {};
 for (const player of game.scored) {
   goalScorers[player] ? goalScorers[player]++ : (goalScorers[player] = 1);
@@ -154,4 +155,3 @@ for (const [min, gameEvent] of gameEvents) {
 // Find the last value in gameEvents map. 
 const time = [...gameEvents.keys()].pop();  // "pop" will return 92
 console.log(time);  // 92
-
